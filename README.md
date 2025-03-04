@@ -1,5 +1,5 @@
 <div align="center">  
-  <h1>Muhamed-Ronin Discord theme</h1>  
+  <h1>Muhamed-Ronin | Discord theme</h1>  
 </div>  
 
 ![Discord_qwWrEMoGqi](https://github.com/user-attachments/assets/59d8bb2d-b4cd-44d6-8856-0e8a564aa715)
