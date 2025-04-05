@@ -2,7 +2,7 @@
   <h1>Muhamed-Ronin | Discord theme</h1>  
 </div>  
 
-![Discord_qwWrEMoGqi](https://github.com/user-attachments/assets/59d8bb2d-b4cd-44d6-8856-0e8a564aa715)
+![Discord_imOISwTBoW](https://github.com/user-attachments/assets/a02f7349-8256-4160-9194-221385122f29)
 
 ## Description
 The **Samurai Path** theme is a minimalist and stylish design for Discord, inspired by the samurai philosophy: "No master, but a great purpose." The theme combines translucent elements, blurred cards, and vibrant accents to create an atmosphere of focus and harmony.
@@ -28,12 +28,13 @@ You can change the background image, colors, and other parameters by editing the
     --accent-hue: 0; /* Red color */
     --accent-saturation: 85%; /* Saturation */
     --accent-lightness: 50%; /* Brightness */
+
 }
 ```
 
 ## Screenshots
-![ByVoeiqgZZ](https://github.com/user-attachments/assets/a940e699-7fff-4219-8b8a-f1416a9fb51f)
-![Discord_Sb6RS6ci5S](https://github.com/user-attachments/assets/c1210347-6d86-4865-8eb2-f73c47df987d)
+![Discord_pfrivqTDsa](https://github.com/user-attachments/assets/7d6d0439-cc86-49f0-b108-ab2a763bfd50)
+![Discord_s11wlMiWGF](https://github.com/user-attachments/assets/2d61d43f-c88d-4ce4-ab00-701e3fa33966)
 
 
 ## Credits
