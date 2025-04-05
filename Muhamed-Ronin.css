@@ -1,156 +1,133 @@
-/**
+/** 
  * @name Muhamed Ronin
- * @version 2.1.8
+ * @version 2.5.1
  * @description Samurai path: no master, but a great purpose
  * @author muhamedlabs and CapnKitten
- *
+ * 
  * @website https://muhamedlabs.pro
- * @source https://github.com/CapnKitten/BetterDiscord/blob/master/Themes/Spotify-Discord/css/source.css
+ * @source https://github.com/CapnKitten/BetterDiscord
  * @donate https://www.donationalerts.com/r/andremuhamad
  */
 
- @import url(https://capnkitten.github.io/BetterDiscord/Themes/Spotify-Discord/css/source.css);
+ @import url('https://capnkitten.github.io/BetterDiscord/Themes/Spotify-Discord/css/source.css');
 
- :root {
-     /* APP BACKGROUND COLORS */
-     --app-background: transparent; /* Делаем основной фон прозрачным */
-     --app-foreground: hsla(0,0%,7%,0.8); /* Добавляем прозрачность */
- 
-     /* ФОНОВАЯ КАРТИНКА */
-     --app-background-image: url('https://i.ibb.co/1J61ffrd/image.png'); /* Твоя фоновая картинка */
- 
-     /* APP CARD SETTINGS */
-     --app-card-radius: 12px; /* Увеличил радиус скругления */
-     --app-card-margin: 10px;
-     --app-card-top-margin: 6px;
-     --app-card-border-color: hsla(0,0%,14%,0.5); /* Полупрозрачный цвет */
- 
-     /* HEADER BAR SETTINGS */
-     --header-bar-height: 56px;
-     --header-bar-color: hsla(0,0%,13%,0.8); /* Полупрозрачный цвет */
- 
-     /* ACCENT HSL AND TEXT COLOR SETTINGS */
-     --accent-hue: 0; /* Красный цвет */
-     --accent-saturation: 85%; /* Увеличил насыщенность */
-     --accent-lightness: 50%; /* Сделал цвет ярче */
-     --accent-text-color: hsl(0,0%,96%); /* Белый текст для контраста */
- 
-     /* ALERT HSL AND TEXT COLOR SETTINGS */
-     --alert-hue: 0;
-     --alert-saturation: 85%;
-     --alert-lightness: 61%;
-     --alert-text-color: hsl(0,0%,96%); /* Белый текст для уведомлений */
- 
-     /* LIST & MENU ITEM SETTINGS */
-     --background-tinted-hover: hsla(0,0%,100%,0.1); /* Легкий эффект при наведении */
-     --background-tinted-active: hsla(0,0%,100%,0.15);
-     --background-tinted-highlight: hsla(0,0%,100%,0.2);
-     --background-tinted-dark: hsla(0,0%,0%,0.3);
- 
-     --menu-text-color: hsl(0,0%,96%); /* Белый текст в меню */
-     --menu-item-radius: 8px;
- 
-     /* CARD SETTINGS */
-     --card-color: hsla(0,0%,10%,0.7); /* Полупрозрачные карточки */
-     --card-color-hover: hsla(0,0%,14%,0.8);
-     --card-color-active: hsla(0,0%,22%,0.9);
-     --card-radius: 8px;
-     --card-border-color: hsla(0,0%,19%,0.5);
- 
-     /* BUTTON SETTINGS */
-     --button-height: 36px;
-     --button-padding: 0 18px;
-     --button-background: hsla(0,0%,100%,0.1); /* Полупрозрачные кнопки */
-     --button-background-hover: hsla(0,0%,100%,0.2);
-     --button-background-active: hsla(0,0%,100%,0.3);
- 
-     /* POPOUT AND MODAL SETTINGS */
-     --popout-color: hsla(0,0%,16%,0.9); /* Полупрозрачные всплывающие окна */
-     --popout-color-alt: hsla(0,0%,11%,0.9);
-     --popout-radius: 12px;
-     --popout-radius-big: 16px;
- 
-     /* INPUT SETTINGS */
-     --input-height: 36px;
-     --input-padding: 0 12px;
-     --input-color: hsla(0,0%,100%,0.1); /* Полупрозрачные поля ввода */
-     --input-radius: 8px;
-     --input-border-color: hsla(0,0%,33%,0.5);
-     --input-text-color: hsl(0,0%,96%); /* Белый текст */
-     --input-placeholder-color: hsla(0,0%,71%,0.8);
- 
-     /* MAIN CHAT BOX SETTINGS */
-     --main-textarea-min-height: 48px;
-     --main-textarea-color: hsla(0,0%,14%,0.8); /* Полупрозрачный фон */
-     --main-textarea-border-color: hsla(0,0%,20%,0.5);
-     --main-textarea-text-color: hsl(0,0%,96%); /* Белый текст */
-     --main-textarea-placeholder-color: hsla(0,0%,54%,0.8);
-     --main-textarea-typing-color: hsla(0,0%,7%,0.9);
- 
-     /* MESSAGE SETTINGS */
-     --message-color-hover: hsla(0,0%,9%,0.8); /* Эффект при наведении на сообщение */
- 
-     /* SLIDER SETTINGS */
-     --slider-color: hsl(0,0%,70%);
-     --slider-background: hsla(0,0%,26%,0.8); /* Полупрозрачный фон слайдера */
- 
-     /* SCROLLBAR SETTINGS */
-     --scrollbar-width: 10px;
-     --scrollbar-color: hsla(0,0%,35%,0.5); /* Полупрозрачный скроллбар */
-     --scrollbar-hover-color: hsla(0,0%,49%,0.7);
-     --scrollbar-active-color: hsla(0,0%,58%,0.9);
- }
- 
- /* Применяем фоновую картинку */
- body {
-     background-image: var(--app-background-image);
-     background-size: cover;
-     background-position: center;
-     background-repeat: no-repeat;
-     background-attachment: fixed;
- }
- 
- /* Делаем основные элементы полупрозрачными */
- .app, .bg, .container, .chat, .sidebar, .content {
-     background-color: transparent !important;
- }
- 
- /* Делаем карточки и панели полупрозрачными */
- .card, .panel, .header, .footer {
-     background-color: var(--card-color) !important;
-     backdrop-filter: blur(12px); /* Увеличил размытие */
-     border-radius: var(--card-radius);
- }
- 
- /* Делаем текстовые поля и кнопки полупрозрачными */
- .input, .textarea, .button {
-     background-color: var(--button-background) !important;
-     border-color: var(--input-border-color) !important;
-     color: var(--input-text-color) !important;
- }
- 
- .button:hover {
-     background-color: var(--button-background-hover) !important;
- }
- 
- .button:active {
-     background-color: var(--button-background-active) !important;
- }
- 
- /* Делаем скроллбар полупрозрачным */
- ::-webkit-scrollbar {
-     background-color: transparent !important;
- }
- 
- ::-webkit-scrollbar-thumb {
-     background-color: var(--scrollbar-color) !important;
-     border-radius: 5px;
- }
- 
- ::-webkit-scrollbar-thumb:hover {
-     background-color: var(--scrollbar-hover-color) !important;
- }
- 
- ::-webkit-scrollbar-thumb:active {
-     background-color: var(--scrollbar-active-color) !important;
- }
+:root {
+    /* ФОН И ОСНОВНЫЕ НАСТРОЙКИ */
+    --app-background-image: url('https://i.ibb.co/1J61ffrd/image.png'); /* URL вашего фонового изображения */
+    --app-background: transparent; /* Прозрачный основной фон (чтобы видеть изображение) */
+    --app-foreground: hsla(0, 0%, 7%, 0.85); /* Цвет основного интерфейса с прозрачностью 85% */
+    
+    /* АКЦЕНТНЫЙ ЦВЕТ (КРАСНЫЙ) */
+    --accent-hue: 344; /* Красный цвет в HSL */
+    --accent-saturation: 100%; /* Насыщенность цвета */
+    --accent-lightness: 57%; /* Яркость цвета */
+    --accent-text-color: hsl(0, 0%, 100%); /* Белый текст на акцентных элементах */
+    
+    /* НАСТРОЙКИ КАРТОЧЕК */
+    --app-card-radius: 12px; /* Закругление углов карточек */
+    --app-card-border-color: hsl(0, 85%, 48%); /* Цвет границ карточек */
+    
+    /* ЦВЕТА КАРТОЧЕК */
+    --card-color: hsla(0, 0%, 8%, 0.8); /* Основной цвет карточек */
+    --card-color-hover: hsla(0, 0%, 12%, 0.9); /* При наведении */
+    --card-color-active: hsla(0, 0%, 16%, 0.95); /* При активном состоянии */
+    
+    /* ИНТЕРАКТИВНЫЕ ЭЛЕМЕНТЫ */
+    --background-tinted-hover: hsla(0, 92%, 52%, 0.2); /* Подсветка при наведении */
+    --background-tinted-active: hsla(0, 92%, 52%, 0.3); /* Подсветка при клике */
+    
+    /* ПОЛЯ ВВОДА */
+    --input-border-color: hsl(0, 85%, 48%); /* Цвет границ полей ввода */
+    
+    /* ПОЛОСА ПРОКРУТКИ */
+    --scrollbar-color: hsl(0, 85%, 48%); /* Основной цвет */
+    --scrollbar-hover-color: hsl(0, 85%, 55%); /* При наведении */
+}
+
+/* ОСНОВНОЙ ФОН */
+.appMount__51fd7 {
+    /* Основное фоновое изображение */
+    background: var(--app-background-image) center/cover no-repeat fixed !important;
+    position: relative; /* Для позиционирования псевдоэлемента */
+}
+
+/* ПОДЛОЖКА ДЛЯ ФОНА С ЭФФЕКТАМИ */
+.appMount__51fd7::before {
+    content: ""; /* Обязательно для псевдоэлементов */
+    position: fixed; /* Фиксированное позиционирование */
+    top: 0; left: 0; right: 0; bottom: 0; /* На весь экран */
+    background: inherit; /* Наследует фоновое изображение */
+    /* Эффекты для фона: */
+    filter: brightness(0.6) contrast(1.1) blur(3px); /* Затемнение, контраст и размытие */
+    z-index: -2; /* Под основным контентом */
+}
+
+/* СТИЛИ ДЛЯ ОСНОВНЫХ КОНТЕЙНЕРОВ */
+.container_a2f514,  /* Главный контейнер */
+.content_a2f514,   /* Область контента */
+.sidebar_c48ade,   /* Боковая панель */
+.chat_f75fb0,      /* Чат */
+.panels_c48ade {   /* Нижняя панель */
+    backdrop-filter: blur(12px) saturate(1.2); /* Эффект матового стекла */
+    background-color: var(--app-foreground) !important; /* Цвет с прозрачностью */
+}
+
+/* СТИЛИ КАРТОЧЕК */
+.card__73069,          /* Обычные карточки */
+.cardPrimary__73069,   /* Основные карточки */
+.bd-addon-card {       /* Карточки BetterDiscord */
+    background-color: var(--card-color) !important;
+    border: 1px solid var(--app-card-border-color) !important;
+    transition: all 0.3s ease; /* Плавные анимации */
+}
+
+/* ЭФФЕКТЫ ПРИ НАВЕДЕНИИ НА КАРТОЧКИ */
+.card__73069:hover {
+    background-color: var(--card-color-hover) !important;
+    transform: translateY(-3px); /* Поднимаем карточку */
+    box-shadow: 0 8px 20px hsla(0, 92%, 52%, 0.25); /* Тень с акцентным цветом */
+}
+
+/* СТИЛИ КНОПОК */
+.lookFilled__201d5.colorBrand__201d5,  /* Акцентные кнопки */
+.lookFilled__201d5.colorPrimary__201d5 { /* Основные кнопки */
+    background-color: hsl(
+        var(--accent-hue), 
+        var(--accent-saturation), 
+        var(--accent-lightness)
+    ) !important;
+    transition: all 0.3s ease; /* Плавные анимации */
+}
+
+/* ЭФФЕКТЫ ПРИ НАВЕДЕНИИ НА КНОПКИ */
+.lookFilled__201d5.colorBrand__201d5:hover {
+    background-color: hsl(
+        var(--accent-hue), 
+        var(--accent-saturation), 
+        calc(var(--accent-lightness) + 6%)
+    ) !important;
+    transform: translateY(-2px); /* Поднимаем кнопку */
+    box-shadow: 0 5px 15px hsla(
+        var(--accent-hue), 
+        var(--accent-saturation), 
+        var(--accent-lightness), 
+        0.6
+    ); /* Тень */
+}
+
+/* ПОЛОСА ПРОКРУТКИ */
+::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-color) !important;
+    box-shadow: inset 0 0 6px rgba(255, 0, 0, 0.5); /* Внутренняя тень */
+}
+
+/* ЭФФЕКТ ВЫДЕЛЕНИЯ ТЕКСТА */
+::selection {
+    background: hsl(
+        var(--accent-hue), 
+        var(--accent-saturation), 
+        var(--accent-lightness)
+    ); /* Акцентный цвет */
+    color: white; /* Белый текст */
+    text-shadow: 0 0 2px black; /* Тень для лучшей читаемости */
+}
